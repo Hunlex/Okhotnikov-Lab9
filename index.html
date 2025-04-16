@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="content">
+                    <div class="text text_white">
+                        <h1>
+                            С помощью нас
+                            <br>
+                            вы сможете создать то, о чём
+                            <span class="big_lower_case">желаете!</span>
+                        </h1>
+                        <div class="transfer"> Наши возможности + опыт позволят Вам достич <br>
+                            огромного успеха. Мы верим в вас! И знаем это на все 100%. Вас не остановить!
+                        </div>
+                            <button class="info" id="magicBtn"> Узнать больше...</button>
+                    </div>
+                    <div class="image" id="magicElement">
+                        <img src="img/header-img.png" alt="phone with app 'Fashion Talk'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block_section">
+        <div class="container">
+            <div class="question_block">
+                <h3>Что Вам необходимо?</h3>
+            </div>
+            <div>
+                <div class="storage_block">
+                    <div class="blocks">
+                        <img src="img/f3.png" alt="pencil">
+                        <h4>Первый блок</h4>
+                        <p class="wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                    <div class="blocks">
+                        <img src="img/f4.png" alt="balloon">
+                        <h4>Второй блок</h4>
+                        <p class="wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                    </div>
+                    <div class="blocks">
+                        <img src="img/f5.png" alt="flag">
+                        <h4>Третий блок</h4>
+                        <p class="wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="order_section">
+        <div class="container" id="element1">
+            <h3>Для заказа заполните форму</h3>
+
+            <form action="#" method="post" class="order_form">
+                <div class="order_field">
+                    <label class="order_label" for="order_first_name">Имя</label>
+                    <div class="order_input_space">
+                        <input class="order_input" type="text" name="order_first_name" placeholder="Алексей">
+                    </div>
+                </div>
+                <div class="order_field">
+                    <label class="order_label" for="order_second_name">Фамилия</label>
+                    <div class="order_input_space">
+                        <input class="order_input" type="text" name="order_second_name" placeholder="Охотников">
+                    </div>
+                </div>
+                <div class="order_field">
+                    <label class="order_label" for="order_tel">Номер телефона</label>
+                    <div class="order_input_space">
+                        <input class="order_input" type="tel" name="order_tel" placeholder="8 900 000 00 00">
+                    </div>
+                </div>
+                <div class="order_field">
+                    <label class="order_label" for="order_place">Город</label>
+                    <div class="order_input_space">
+                        <input class="order_input" type="text" name="order_place" placeholder="Екатеринбург">
+                    </div>
+                </div>
+                <div class="order_field">
+                    <label class="order_label" for="order_date">Дата</label>
+                    <div class="order_input_space">
+                        <input class="order_input" type="date" name="order_date">
+                    </div>
+                </div>
+                <div class="order_field">
+                    <label class="order_label" for="order_time">Время</label>
+                    <div class="order_input_space">
+                        <input class="order_input" type="time" name="order_time">
+                    </div>
+                </div>
+                <div class="order_field">
+                    <label class="order_label" for="order_quantity">Количество</label>
+                    <div class="order_input_space">
+                        <input class="order_input" type="number" name="order_quantity" placeholder="1">
+                    </div>
+                </div>
+                <div class="order_field">
+                    <label class="order_label" for="order_payment">Способ оплаты</label>
+                    <div class="order_input_space">
+                        <select id="pay" name="pay" class="order_input">
+                            <option value="">Выберите способ оплаты</option>
+                            <option value="qr">QR</option>
+                            <option value="cart">Банковской картой</option>
+                            <option value="p2p">Банковский перевод</option>
+                          </select>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="form_button order_button">Заказать</button>                   
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="form_seletion">
+        <div class="container">
+            <div class="form_container">
+                <h3>Форма заказа обратного звонка</h3>
+                <form action="#" method="post" class="form">
+                    <input type="text" name="username" placeholder="Имя" class="input_form" required minlength="2" maxlength="15" >
+                    <input type="email" name="email" placeholder="Введите свой E-mail" class="input_form" required>
+                    <input type="tel" name="phone" placeholder="Телефон" class="input_form" required pattern="[0-9]{11}" maxlength="">
+                    <input type="text" name="question" placeholder="Какая тема Вас интересует?" class="input_form" minlength="3" maxlength="120">
+                    <button type="submit" class="form_button">Отправить вопрос!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer text_white">
+        <h5>Всё на этом сайте защищено</h5>
+    </div>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>
